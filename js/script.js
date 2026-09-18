@@ -38,6 +38,44 @@ document.addEventListener("click", (event) => {
 
 });
 
+/* Project Filtering */
+const filterButtons = document.querySelectorAll(".filter-btn");
+const projectCards = document.querySelectorAll(".project-card");
+
+filterButtons.forEach((button) => {
+
+    button.addEventListener("click", () => {
+
+        const selectedFilter = button.dataset.filter;
+
+        /* Remove active state from all buttons */
+        filterButtons.forEach((btn) => {
+            btn.classList.remove("active");
+        });
+
+        /* Activate clicked button */
+        button.classList.add("active");
+
+        /* Show / hide projects */
+        projectCards.forEach((card) => {
+
+            const category = card.dataset.category;
+
+            if (
+                selectedFilter === "all" ||
+                category === selectedFilter
+            ) {
+                card.style.display = "block";
+            } else {
+                card.style.display = "none";
+            }
+
+        });
+
+    });
+
+});
+
 /* Scroll Reveal Animation */
 
 const revealElements = document.querySelectorAll(
