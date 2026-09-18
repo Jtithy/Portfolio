@@ -666,14 +666,21 @@
                 </div>
 
                 <!-- Contact Form -->
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
+                <form class="contact-form" id="contactForm" action="https://formsubmit.co/j.tithy84@gmail.com"
+                    method="POST">
 
+                    <input type="hidden" name="_subject" value="New Portfolio Contact Message">
+
+                    <input type="hidden" name="_template" value="table">
+
+                    <input type="hidden" name="_captcha" value="true">
+
+                    <div class="form-group">
                         <label for="name">Name</label>
                         <input type="text" id="name" name="name" placeholder="Your name" required>
                     </div>
 
-                    <div class="fm-group">
+                    <div class="form-group">
                         <label for="email">Email</label>
                         <input type="email" id="email" name="email" placeholder="Your email" required>
                     </div>
@@ -683,7 +690,10 @@
                         <textarea id="message" name="message" rows="10" placeholder="Your message" required></textarea>
                     </div>
 
-                    <button type="submit" class="btn primary-btn">Send Message</button>
+                    <button type="submit" class="btn primary-btn">
+                        Send Message
+                    </button>
+
                 </form>
             </div>
         </section>
