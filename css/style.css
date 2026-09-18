@@ -435,3 +435,18 @@ a {
 .form-group textarea {
     resize: verticle;
 }
+
+/* Footer */
+.footer {
+    padding: 30px 5%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    border-top: 2px dotted var(--border);
+    color: var(--text-muted);
+    font-size: .9rem;
+}
+
+.footer-links a:hover {
+    color: var(--accent);
+}
