@@ -18,11 +18,11 @@
             <a href="#home" class="logo">Tithy<span>.</span></a>
         </nav>
 
-        <button class="menu_toggle" id="menuToggle" aria-label="Open navigation menu">
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu">
             ☰
         </button>
 
-        <ul class="nav-links" id="navlinks">
+        <ul class="nav-links" id="navLinks">
             <li>
                 <a href="#home">Home</a>
             </li>
@@ -56,7 +56,7 @@
                 <h2>Software Engineering Student & Developer</h2>
 
                 <p class="hero-description">
-                    I build clean, functional web applications and I'm currently expending my skills into backend and
+                    I build clean, functional web applications and I'm currently expanding my skills into backend and
                     full-stack development. I also work in C, Java(OOP) and Python programming and have a strong
                     interest in software development and web development.
                 </p>
@@ -72,7 +72,7 @@
                     </a>
 
                     <a href="#contact">
-                        LinkedIn ↗
+                        Contact ↗
                     </a>
                 </div>
             </div>
@@ -133,13 +133,13 @@
             <div class="about-content">
                 <div class="about-text">
                     <p>
-                        I'm a passionatte Software Engineering student interested in web development and software
+                        I'm a passionate Software Engineering student interested in web development and software
                         development.
                     </p>
                     <p>
-                        I started my journey in programming with C, Java and Python programming and gradually expended
+                        I started my journey in programming with C, Java and Python programming and gradually expanded
                         my skill to web
-                        development, exploring HTML, CSS and JavaScript and now started backend and full-stack
+                        development, exploring HTML, CSS and JavaScript and now started learning backend and full-stack
                         development.
                     </p>
                     <p>
@@ -166,7 +166,7 @@
         </section>
 
         <!-- Skills Section -->
-        <section clas="=section skills" id="skills">
+        <section class="section skills" id="skills">
             <div class="section-heading">
                 <p class="section-label">What I work with</p>
                 <h2>Skills</h2>
@@ -224,13 +224,25 @@
                 <div class="skill-card">
                     <span class="skill-number">09</span>
                     <h3>MySQL</h3>
-                    <p>Local database development and data management.</p>
+                    <p>Relational database management and SQL development.</p>
                 </div>
 
                 <div class="skill-card">
                     <span class="skill-number">10</span>
                     <h3>SQLite</h3>
-                    <p>Local database development and data management.</p>
+                    <p>Lightweight database development and local data storage.</p>
+                </div>
+
+                <div class="skill-card">
+                    <span class="skill-number">11</span>
+                    <h3>Electron.js</h3>
+                    <p>Building cross-platform desktop applications with web technologies.</p>
+                </div>
+
+                <div class="skill-card">
+                    <span class="skill-number">12</span>
+                    <h3>Express.js</h3>
+                    <p>Backend APIs and server-side web application development.</p>
                 </div>
             </div>
         </section>
@@ -244,51 +256,50 @@
 
             <div class="projects-grid">
 
-                <!-- Project 1 -->
-                <article class="project-card">
+                <!-- Featured Project -->
+                <article class="project-card featured-project">
                     <div class="project-image">
                         <span>01</span>
+                        <div class="project-featured-label">Featured Project</div>
                     </div>
 
                     <div class="project-content">
-                        <p class="project-type">C Programming Project</p>
-                        <h3>Parking Lot Management System</h3>
+                        <p class="project-type">Full-Stack / Desktop Application</p>
+
+                        <h3>The Shelf</h3>
+
                         <p>
-                            The **Parking Lot Management System** is a C-based console application developed to
-                            streamline and organize essential parking lot operations. The system provides comprehensive
-                            functionality for administrator management, vehicle and owner registration, parking space
-                            allocation, vehicle entry and exit management, automated parking fee calculation, and report
-                            generation. It supports up to 50 parking spaces and uses file-based data storage to maintain
-                            records persistently.
+                            The Shelf is a personal digital library application for
+                            organizing and managing book collections. It supports
+                            adding, editing, deleting, searching, sorting, rating,
+                            reviewing, and managing book covers.
+                        </p>
 
-                            The application incorporates input validation, parking occupancy monitoring, vehicle status
-                            tracking, and structured reporting to ensure efficient management of parking resources. From
-                            a technical perspective, the project demonstrates practical applications of fundamental C
-                            programming concepts, including structures, arrays, functions, file handling, string
-                            manipulation, and time management.
-
-                            Developed as an academic project, the system provides a practical foundation for
-                            understanding real-world management software while strengthening programming, data
-                            management, and problem-solving skills. Future enhancements may include database
-                            integration, a graphical user interface, online payment, digital parking tickets, license
-                            plate recognition, and cloud-based data management.
+                        <p>
+                            The project combines a web interface with a Node.js and
+                            Express.js backend, SQLite database storage, and Electron
+                            to provide a standalone offline desktop application.
                         </p>
 
                         <div class="project-tech">
-                            <span>C Programming</span>
-                            <span>File Handling</span>
-                            <span>Data Structure</span>
-                            <span>Project Management</span>
-                            <span>Teamwork</span>
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Node.js</span>
+                            <span>Express.js</span>
+                            <span>SQLite</span>
+                            <span>Electron.js</span>
                         </div>
 
                         <div class="project-links">
-                            <a href="https://github.com/Jtithy/Parking-Lot-Management/tree/main" target="_blank">GitHub
-                                - Parking Lot Management
+                            <a href="https://github.com/Jtithy/The_Shelf" target="_blank" rel="noopener noreferrer"
+                                class="project-btn">
+                                GitHub ↗
                             </a>
                         </div>
                     </div>
                 </article>
+
 
                 <!-- Project 2 -->
                 <article class="project-card">
@@ -297,39 +308,34 @@
                     </div>
 
                     <div class="project-content">
-                        <p class="project-type">Python Project</p>
+                        <p class="project-type">AI / Machine Learning</p>
+
                         <h3>AI Chatbot</h3>
+
                         <p>
-                            **AI_ChatBot_Project01** is an AI-powered conversational chatbot developed using Python,
-                            Natural Language Processing (NLP), and Machine Learning. The system uses NLTK for text
-                            preprocessing, a Bag-of-Words model for feature representation, and a TensorFlow/Keras
-                            neural network to identify user intents and generate appropriate responses. User messages
-                            are tokenized and lemmatized before being converted into numerical features, which are then
-                            processed by the trained model to determine the most relevant intent. Responses are selected
-                            from a predefined set of intents and conversational patterns stored in a JSON dataset. The
-                            project demonstrates fundamental concepts of NLP, text classification, neural networks,
-                            model training, and AI-based human-computer interaction. Designed primarily for educational
-                            purposes, it provides a practical foundation for understanding how intelligent chatbots are
-                            developed and can be further enhanced with advanced NLP techniques, word embeddings, LSTM or
-                            Transformer models, and web-based interfaces.
+                            A Python-based conversational chatbot using Natural
+                            Language Processing and a neural network to classify
+                            user intents and generate appropriate responses.
                         </p>
 
                         <div class="project-tech">
                             <span>Python</span>
-                            <span>OOP</span>
                             <span>NLP</span>
-                            <span>Machine Learning</span>
-                            <Span>TensorFlow</Span>
-                            <span>Keras</span>
                             <span>NLTK</span>
+                            <span>TensorFlow</span>
+                            <span>Keras</span>
+                            <span>Machine Learning</span>
                         </div>
 
-                        <div class="project-link">
-                            <a href="https://github.com/Jtithy/AI_ChatBot_Project01" target="_blank">GitHub - AI Chatbot
+                        <div class="project-links">
+                            <a href="https://github.com/Jtithy/AI_ChatBot_Project01" target="_blank"
+                                rel="noopener noreferrer" class="project-btn">
+                                GitHub ↗
                             </a>
                         </div>
                     </div>
                 </article>
+
 
                 <!-- Project 3 -->
                 <article class="project-card">
@@ -338,37 +344,34 @@
                     </div>
 
                     <div class="project-content">
-                        <p class="project-type">Python Project</p>
-                        <h3>Headline Generator</h3>
+                        <p class="project-type">Deep Learning</p>
+
+                        <h3>Rice Disease Classification</h3>
+
                         <p>
-                            **Headline Generator** is a Python-based command-line application that generates creative
-                            and humorous news-style headlines using randomized combinations of predefined subjects,
-                            actions, and places or things. The project uses Python’s built-in `random` module to select
-                            different elements and dynamically combine them into unique headlines. It provides a simple
-                            interactive interface that allows users to generate multiple headlines continuously until
-                            they choose to exit. The project demonstrates fundamental Python programming concepts,
-                            including lists, loops, user input, random selection, string formatting, and basic program
-                            flow control. Developed as a beginner-friendly project, it provides practical experience in
-                            building interactive console applications while demonstrating how simple programming
-                            techniques can be used to create dynamic text generation systems. Future enhancements could
-                            include custom user inputs, categorized headline generation, file-based storage, and a
-                            graphical user interface.
+                            A CNN-based image classification system developed with
+                            TensorFlow and Keras to identify different rice plant
+                            diseases from leaf images.
                         </p>
 
                         <div class="project-tech">
                             <span>Python</span>
-                            <span>Randomization</span>
-                            <span>String Manipulation</span>
-                            <span>Command Line Interface</span>
+                            <span>TensorFlow</span>
+                            <span>Keras</span>
+                            <span>CNN</span>
+                            <span>Deep Learning</span>
+                            <span>Image Classification</span>
                         </div>
 
-                        <div class="project-link">
-                            <a href="https://github.com/Jtithy/Headline_Generator" target="_blank">GitHub - Headline
-                                Generator
+                        <div class="project-links">
+                            <a href="https://github.com/Jtithy/Rice_Disease_Classification-Peddy_Disease"
+                                target="_blank" rel="noopener noreferrer" class="project-btn">
+                                GitHub ↗
                             </a>
                         </div>
                     </div>
                 </article>
+
 
                 <!-- Project 4 -->
                 <article class="project-card">
@@ -377,33 +380,33 @@
                     </div>
 
                     <div class="project-content">
-                        <p class="project-type">Python Project</p>
-                        <h3>Calculator with history</h3>
+                        <p class="project-type">C Programming</p>
+
+                        <h3>Parking Lot Management System</h3>
+
                         <p>
-                            **Calculator With History** is a Python-based command-line calculator designed to perform
-                            essential arithmetic operations while maintaining a record of previous calculations. It
-                            supports addition, subtraction, multiplication, division, and modulus operations, along with
-                            commands for viewing and clearing calculation history. The project uses file handling to
-                            persist calculation records in a text file and includes basic error handling for operations
-                            such as division by zero. It demonstrates fundamental Python programming concepts, including
-                            functions, loops, conditional statements, user input processing, string manipulation, and
-                            file operations.
+                            A console-based parking management system that handles
+                            vehicle registration, parking allocation, entry and exit
+                            tracking, fee calculation, and record management.
                         </p>
 
                         <div class="project-tech">
-                            <span>Python</span>
+                            <span>C</span>
+                            <span>Structures</span>
+                            <span>Arrays</span>
                             <span>File Handling</span>
-                            <span>String Manipulation</span>
-                            <span>Command Line Interface</span>
+                            <span>Data Structures</span>
                         </div>
 
-                        <div class="project-link">
-                            <a href="https://github.com/Jtithy/Calculator_With_History" target="_blank">GitHub -
-                                Calculator With History
+                        <div class="project-links">
+                            <a href="https://github.com/Jtithy/Parking-Lot-Management/tree/main" target="_blank"
+                                rel="noopener noreferrer" class="project-btn">
+                                GitHub ↗
                             </a>
                         </div>
                     </div>
                 </article>
+
 
                 <!-- Project 5 -->
                 <article class="project-card">
@@ -412,41 +415,33 @@
                     </div>
 
                     <div class="project-content">
-                        <p class="project-type">Deep Learning Project</p>
-                        <h3>Rice Disease Classification</h3>
+                        <p class="project-type">Frontend Project</p>
+
+                        <h3>Weather App</h3>
+
                         <p>
-                            **Rice Disease Classification** is a deep learning project developed to automatically
-                            identify and classify rice plant diseases from leaf images. The project uses a Convolutional
-                            Neural Network (CNN) implemented with TensorFlow and Keras to classify images into 10
-                            different categories, including bacterial diseases, blast, brown spot, dead heart, downy
-                            mildew, hispa, tungro, and healthy leaves. The dataset contains 10,407 images covering
-                            multiple rice varieties and plant growth stages. The project includes exploratory data
-                            analysis, image preprocessing, CNN model development, training, and performance evaluation
-                            using accuracy and loss metrics. The model achieved approximately 99% training accuracy and
-                            79.8% validation accuracy. Developed for academic and research purposes, the project
-                            demonstrates the practical application of computer vision and deep learning in agricultural
-                            disease detection and provides a foundation for future deployment in web or mobile-based
-                            crop diagnostic systems.
+                            A responsive weather application that retrieves real-time
+                            weather information for searched cities using the
+                            OpenWeatherMap API.
                         </p>
 
                         <div class="project-tech">
-                            <span>Python</span>
-                            <span>TensorFlow</span>
-                            <span>Keras</span>
-                            <span>Convolutional Neural Network (CNN)</span>
-                            <span>Image Classification</span>
-                            <span>Deep Learning</span>
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>REST API</span>
+                            <span>JSON</span>
+                            <span>Async JavaScript</span>
                         </div>
 
-                        <div class="project-link">
-                            <a href="https://github.com/Jtithy/Rice_Disease_Classification-Peddy_Disease"
-                                target="_blank">GitHub -
-                                Rice Disease Classification
+                        <div class="project-links">
+                            <a href="https://github.com/Jtithy/Weather-App" target="_blank" rel="noopener noreferrer"
+                                class="project-btn">
+                                GitHub ↗
                             </a>
                         </div>
                     </div>
                 </article>
-
 
 
                 <!-- Project 6 -->
@@ -457,34 +452,33 @@
 
                     <div class="project-content">
                         <p class="project-type">Frontend Project</p>
-                        <h3>Calculator with history</h3>
+
+                        <h3>To-Do List</h3>
+
                         <p>
-                            **Calculator** is a simple and responsive web-based calculator developed using HTML5, CSS3,
-                            and Vanilla JavaScript. It provides an intuitive interface for performing basic arithmetic
-                            operations, including addition, subtraction, multiplication, division, and modulus. The
-                            application also supports decimal numbers, real-time calculations, clearing the display, and
-                            deleting the last entered character. Designed as a beginner-friendly front-end project, it
-                            demonstrates fundamental concepts such as DOM manipulation, JavaScript functions, event
-                            handling, CSS styling, and responsive web design.
+                            A responsive task management application built with
+                            vanilla JavaScript. Users can add and manage tasks
+                            through dynamic DOM manipulation and event handling.
                         </p>
 
                         <div class="project-tech">
                             <span>HTML5</span>
                             <span>CSS3</span>
                             <span>JavaScript</span>
-                            <span>DOM Manipulation</span>
+                            <span>DOM</span>
                             <span>Event Handling</span>
-                            <span>CSS Styling</span>
-                            <span>Responsive Web Design</span>
+                            <span>Responsive Design</span>
                         </div>
 
-                        <div class="project-link">
-                            <a href="https://github.com/Jtithy/Calculator" target="_blank">GitHub -
-                                Calculator
+                        <div class="project-links">
+                            <a href="https://github.com/Jtithy/To-Do-List" target="_blank" rel="noopener noreferrer"
+                                class="project-btn">
+                                GitHub ↗
                             </a>
                         </div>
                     </div>
                 </article>
+
 
                 <!-- Project 7 -->
                 <article class="project-card">
@@ -493,35 +487,32 @@
                     </div>
 
                     <div class="project-content">
-                        <p class="project-type">Frontend Project</p>
-                        <h3>To-Do List</h3>
+                        <p class="project-type">Python Project</p>
+
+                        <h3>Calculator With History</h3>
+
                         <p>
-                            To-Do List is a lightweight and responsive web application developed using HTML5, CSS3, and
-                            Vanilla JavaScript for managing daily tasks efficiently. The application allows users to add
-                            and dynamically display tasks through a clean and intuitive interface. It demonstrates
-                            essential front-end development concepts, including DOM manipulation, event handling, user
-                            input processing, dynamic element creation, and responsive web design. Designed as a
-                            beginner-friendly project, it provides practical experience in building interactive web
-                            applications using core web technologies without external frameworks or libraries.
+                            A command-line calculator that performs arithmetic
+                            operations while storing previous calculations using
+                            file handling.
                         </p>
 
                         <div class="project-tech">
-                            <span>HTML5</span>
-                            <span>CSS3</span>
-                            <span>JavaScript</span>
-                            <span>DOM Manipulation</span>
-                            <span>Event Handling</span>
-                            <span>CSS Styling</span>
-                            <span>Responsive Web Design</span>
+                            <span>Python</span>
+                            <span>Functions</span>
+                            <span>File Handling</span>
+                            <span>CLI</span>
                         </div>
 
-                        <div class="project-link">
-                            <a href="https://github.com/Jtithy/To-Do-List" target="_blank">GitHub -
-                                To-Do List
+                        <div class="project-links">
+                            <a href="https://github.com/Jtithy/Calculator_With_History" target="_blank"
+                                rel="noopener noreferrer" class="project-btn">
+                                GitHub ↗
                             </a>
                         </div>
                     </div>
                 </article>
+
 
                 <!-- Project 8 -->
                 <article class="project-card">
@@ -531,33 +522,32 @@
 
                     <div class="project-content">
                         <p class="project-type">Frontend Project</p>
-                        <h3>Weather App</h3>
+
+                        <h3>Digital Clock</h3>
+
                         <p>
-                            **Weather App** is a responsive web application built with HTML, CSS, and Vanilla JavaScript
-                            that provides real-time weather information for searched cities using the OpenWeatherMap
-                            API. It displays temperature, weather conditions, humidity, and wind speed through a simple
-                            and user-friendly interface. The project demonstrates practical concepts such as API
-                            integration, asynchronous JavaScript, DOM manipulation, event handling, and JSON data
-                            processing.
+                            A real-time digital clock displaying the current time,
+                            date, greeting, and timezone with a Dark Mode and
+                            Light Mode toggle.
                         </p>
 
                         <div class="project-tech">
                             <span>HTML5</span>
                             <span>CSS3</span>
                             <span>JavaScript</span>
-                            <span>DOM Manipulation</span>
-                            <span>Event Handling</span>
-                            <span>CSS Styling</span>
-                            <span>Responsive Web Design</span>
+                            <span>DOM</span>
+                            <span>Date API</span>
                         </div>
 
-                        <div class="project-link">
-                            <a href="https://github.com/Jtithy/Weather-App" target="_blank">GitHub -
-                                Weather App
+                        <div class="project-links">
+                            <a href="https://github.com/Jtithy/Digital_Clock" target="_blank" rel="noopener noreferrer"
+                                class="project-btn">
+                                GitHub ↗
                             </a>
                         </div>
                     </div>
                 </article>
+
 
                 <!-- Project 9 -->
                 <article class="project-card">
@@ -566,34 +556,32 @@
                     </div>
 
                     <div class="project-content">
-                        <p class="project-type">Frontend Project</p>
-                        <h3>Digital Clock</h3>
+                        <p class="project-type">Python Project</p>
+
+                        <h3>Headline Generator</h3>
+
                         <p>
-                            **Digital Clock** is a responsive web application built with HTML, CSS, and Vanilla
-                            JavaScript that displays the current time, date, greeting, and local timezone in real time.
-                            It automatically updates every second and includes a Dark Mode/Light Mode toggle. The
-                            project demonstrates fundamental front-end development concepts such as DOM manipulation,
-                            JavaScript date and time handling, event listeners, dynamic content updates, and CSS class
-                            manipulation.
+                            A command-line application that generates creative
+                            news-style headlines using randomized combinations
+                            of subjects, actions, and places.
                         </p>
 
                         <div class="project-tech">
-                            <span>HTML5</span>
-                            <span>CSS3</span>
-                            <span>JavaScript</span>
-                            <span>DOM Manipulation</span>
-                            <span>Event Handling</span>
-                            <span>CSS Styling</span>
-                            <span>Responsive Web Design</span>
+                            <span>Python</span>
+                            <span>Randomization</span>
+                            <span>String Manipulation</span>
+                            <span>CLI</span>
                         </div>
 
-                        <div class="project-link">
-                            <a href="https://github.com/Jtithy/Digital_Clock" target="_blank">GitHub -
-                                Digital Clock
+                        <div class="project-links">
+                            <a href="https://github.com/Jtithy/Headline_Generator" target="_blank"
+                                rel="noopener noreferrer" class="project-btn">
+                                GitHub ↗
                             </a>
                         </div>
                     </div>
                 </article>
+
 
                 <!-- Project 10 -->
                 <article class="project-card">
@@ -602,63 +590,30 @@
                     </div>
 
                     <div class="project-content">
-                        <p class="project-type">Full-Stack Project</p>
-                        <h3>The Shelf</h3>
+                        <p class="project-type">Frontend Project</p>
+
+                        <h3>Calculator</h3>
+
                         <p>
-                            **The Shelf** is a full-stack personal digital library application that allows users to
-                            organize and manage their book collections in one place. It supports adding, editing,
-                            deleting, searching, sorting, rating, and reviewing books, with cover images added through
-                            URLs or local uploads. The application combines **HTML, CSS, JavaScript, Node.js,
-                            Express.js, MySQL, SQLite and Electron.js** to provide a responsive web interface,
-                            persistent
-                            database storage, and a standalone desktop experience.
+                            A responsive web calculator built with vanilla
+                            JavaScript supporting arithmetic operations,
+                            decimals, deletion, and dynamic display updates.
                         </p>
 
                         <div class="project-tech">
                             <span>HTML5</span>
                             <span>CSS3</span>
                             <span>JavaScript</span>
-                            <span>Node.js</span>
-                            <span>Express.js</span>
-                            <span>MySQL</span>
-                            <span>Electron.js</span>
-                            <span>SQLite</span>
+                            <span>DOM</span>
+                            <span>Event Handling</span>
                         </div>
 
-                        <div class="project-link">
-                            <a href="https://github.com/Jtithy/The_Shelf" target="_blank">GitHub -
-                                The Shelf
+                        <div class="project-links">
+                            <a href="https://github.com/Jtithy/Calculator" target="_blank" rel="noopener noreferrer"
+                                class="project-btn">
+                                GitHub ↗
                             </a>
                         </div>
-                    </div>
-                </article>
-
-                <!-- Project 11 -->
-                <article class="project-card">
-                    <div class="project-image">
-                        <span>11</span>
-                    </div>
-
-                    <div class="project-content">
-                        <p class="project-type">Full-Stack Project</p>
-                        <h3>Coming Soon</h3>
-                        <p>
-                            More projects will be added here as I
-                            continue building and exploring web
-                            development.
-                        </p>
-
-                        <div class="project-tech">
-                            <span>HTML5</span>
-                            <span>CSS3</span>
-                            <span>JavaScript</span>
-                            <span>Node.js</span>
-                            <span>Express.js</span>
-                            <span>MySQL</span>
-                            <span>Electron.js</span>
-                            <span>SQLite</span>
-                        </div>
-
                     </div>
                 </article>
 
@@ -692,7 +647,7 @@
         <section class="section contact" id="contact">
             <div class="section-heading">
                 <p class="section-label">Let's get in touch</p>
-                <h2>Concat Me</h2>
+                <h2>Contact Me</h2>
             </div>
 
             <div class="contact-content">
@@ -705,15 +660,15 @@
                 </div>
 
                 <!-- Contact Form -->
-                <form class="contact-from" id="contactForm" action="mailto:j.tithy84@gmail.com" method="post"
+                <form class="contact-form" id="contactForm" action="mailto:j.tithy84@gmail.com" method="post"
                     enctype="text/plain">
-                    <div class="from-group">
+                    <div class="form-group">
 
                         <label for="name">Name</label>
                         <input type="text" id="name" name="name" placeholder="Your name" required>
                     </div>
 
-                    <div class="from-group">
+                    <div class="fm-group">
                         <label for="email">Email</label>
                         <input type="email" id="email" name="email" placeholder="Your email" required>
                     </div>
