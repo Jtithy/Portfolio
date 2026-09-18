@@ -797,15 +797,23 @@ a {
         padding: 12px 0;
     }
 
-
     /* Hero */
     .hero {
-        flex-direction: column;
-        justify-content: center;
+        grid-template-columns: 1fr;
+        min-height: auto;
+        padding-top: 130px;
+        padding-bottom: 90px;
         text-align: center;
-        gap: 50px;
-        padding-top: 100px;
-        padding-bottom: 70px;
+        gap: 60px;
+    }
+
+    .hero-content {
+        max-width: 700px;
+        margin: auto;
+    }
+
+    .hero-status {
+        margin-bottom: 20px;
     }
 
     .hero-buttons {
@@ -816,17 +824,22 @@ a {
         justify-content: center;
     }
 
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .hero-image {
         width: 100%;
     }
 
     .profile-card {
-        width: min(360px, 100%);
+        width: min(350px, 100%);
         transform: none;
     }
 
     .profile-card:hover {
-        transform: translateY(-5px);
+        transform: translateY(-8px);
     }
 
 
