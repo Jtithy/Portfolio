@@ -178,21 +178,86 @@ a {
     border-color: var(--accent);
 }
 
+.hero h1 span {
+    color: var(--accent);
+}
+
+.social-links {
+    display: flex;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.social-links a {
+    color: var(--text-muted);
+    font-size: .9rem;
+    transition: .3s;
+}
+
+.social-links a:hover {
+    color: var(--accent);
+}
+
 .hero-image {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.profile-placeholder {
-    width: 300px;
-    height: 300px;
+.profile-card {
+    width: 230px;
+    min-height: 300px;
+    background: #0f1217;
+    border: 1px dotted var(--border);
+    border-radius: 15px;
+    box-shadow: 0 25px 70px rgba(0, 0, 0, .5);
+    overflow: hidden;
+    transform: rotate(2deg);
+    transition: .4s;
+}
+
+.profile-card:hover {
+    transform: rotate(0deg) translateY(-8px);
+}
+
+.profile-top {
+    height: 40px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    border: 1px dotted var(--border);
+    gap: 7px;
+    padding: 0 15px;
+    border-bottom: 1px dotted var(--border);
+}
+
+.profile-top span {
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
-    background: var(--surface);
+    background: var(--border);
+}
+
+.profile-code {
+    padding: 30px;
+    font-family: "Courier New", monospace;
+    font-size: 1rem;
+    color: var(--text-muted);
+    line-height: 2;
+}
+
+.code-purple {
+    color: #a78bfa;
+}
+
+.code-green {
+    color: #86efac;
+}
+
+.code-indent {
+    padding-left: 25px;
+}
+
+.conde-indent-2 {
+    padding-left: 50px;
 }
 
 .profile-placeholder span {
@@ -483,9 +548,17 @@ a {
         justify-content: center;
     }
 
-    .profile-placeholder {
-        width: 200px;
-        height: 200px;
+    .hero-image {
+        weidth: 100%;
+    }
+
+    .profile-card {
+        width: min(360px, 100%);
+        transform: none;
+    }
+
+    .profile-card:hover {
+        transform: translateY(-5px);
     }
 
     .about-content,
