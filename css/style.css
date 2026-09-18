@@ -281,3 +281,73 @@ a {
 }
 
 /* Projects */
+.projects {
+    border-top: 2px dotted var(--border);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.project-card {
+    overflow: hidden;
+    background: var(--surface);
+    border: 1px dotted var(--border);
+    border-radius: 15px;
+}
+
+.project-image {
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--surface);
+}
+
+.project-image span {
+    font-size: 5rem;
+    font-weight: 800;
+    color: var(--accent);
+}
+
+.project-content {
+    padding: 30px;
+}
+
+.project-type {
+    color: var(--accent);
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.project-content h3 {
+    font-size: 1.8rem;
+    margin: 8px 0 12 px;
+}
+
+.project-content>p:not(.project-type) {
+    color: var(--text-muted);
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.project-tech span {
+    padding: 5px 10px;
+    border: 1px dotted var(--border);
+    border-radius: 5px;
+    color: var(--text-muted);
+    font-size: .8rem;
+}
+
+.project-links a {
+    color: var(--accent);
+    font-weight: bold;
+}
