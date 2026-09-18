@@ -352,6 +352,30 @@ a {
     gap: 80px;
 }
 
+.about-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 35px;
+}
+
+.about-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.about-stat-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--accent-color);
+}
+
+.about-stat-label {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
 .about-text {
     color: var(--text-muted);
     font-size: 1.05rem;
@@ -897,6 +921,13 @@ a {
         gap: 40px;
     }
 
+    .about-stats {
+        gap: 20px;
+    }
+
+    .about-stat-number {
+        font-size: 1.6rem;
+    }
 
     /* Skills */
     .skills-grid {
