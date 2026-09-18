@@ -683,6 +683,18 @@ a {
     color: var(--accent);
 }
 
+/* Scrollbar */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity .7s ease, tansform .7s ease;
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* Resposive Design */
 @media (max-width: 800px) {
 
