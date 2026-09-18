@@ -351,3 +351,32 @@ a {
     color: var(--accent);
     font-weight: bold;
 }
+
+/* Education */
+.education {
+    border-top: 2px dotted var(--border);
+}
+
+.education-card {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 30px;
+    padding: 35px;
+    background: var(--surface);
+    border: 1px dotted var(--border);
+    border-radius: 10px;
+}
+
+.education-year {
+    color: var(--accent);
+    font-weight: bold;
+}
+
+.education-content h3 {
+    margin-bottom: 10px;
+}
+
+.education-content p {
+    color: var(--text-muted);
+    margin-bottom: 10px;
+}
