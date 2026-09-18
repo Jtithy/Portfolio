@@ -242,3 +242,42 @@ a {
 }
 
 /* Skills */
+.skills {
+    border-top: 1px dotted var(--border);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.skill-card {
+    padding: 30px;
+    background: var(--surface);
+    border: 1px dotted var(--border);
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent);
+}
+
+.skill-number {
+    color: var(--accent);
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+.skill-card h3 {
+    margin: 15px 0 10px;
+    font-size: 1.3rem;
+}
+
+.skill-card p {
+    color: var(--text-muted);
+}
+
+/* Projects */
